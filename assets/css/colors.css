@@ -1,5 +1,5 @@
 :root {
-    --bg: #0d0435;
+    --bg: #09090c;
     --primary: #b329f2;
     --secondary: #131a2b;
     --red: #cc3f47;
@@ -14,7 +14,7 @@
     --red-90: #cc3f47ee;
     --red-100: #cc3f47ff;
     --cor:#ff9399;
-    --cor-primaria-amarelo-ouro: #FFD700;
+    --yellow: #FFD700;
 
     /* defaults */
     --white: #FFFFFF;
