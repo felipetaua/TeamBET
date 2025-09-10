@@ -101,7 +101,7 @@ body {
     font-size: 20px;
     color: #ff3842;
 }
-/*#150a17, #2b1218, #5c0a0e,#b55441, #b03131, #ff3842, #c79340*/
+
 .btn-primay {
     width: fit-content;
     display: flex;
@@ -111,10 +111,7 @@ body {
     font-weight: bold;
     border-radius: 30px;
     text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
-    background: linear-gradient(45deg, #b8860b, #daa520,   #ffd700,   #ffec8b,   #daa520, #daa010
-) no-repeat;
-
-
+    background: linear-gradient(45deg, #b8860b, #daa520,   #ffd700,   #ffec8b,   #daa520, #daa010) no-repeat;
     background-size: 300%;
     color: #fff;
     border: 2px solid #d38b07;
