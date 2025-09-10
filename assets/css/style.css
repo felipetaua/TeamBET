@@ -50,6 +50,16 @@ body {
     margin-left: 20px;
 }
 
+.menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: var(--white);
+    font-size: 28px;
+}
+
 .btn-action {
     background-color: #cc3f47;
     color: var(--white);
@@ -133,4 +143,43 @@ body {
     width: 23px;
     fill: #ffffff;
     transition: .3s ease;
+}
+
+/*  Responsividade */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        z-index: 1001; 
+    }
+
+    .desktop-menu,
+    #btn-desktop {
+        display: none;
+    }
+
+    .desktop-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--bg);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 1000;
+    }
+
+    .desktop-menu .nav-item {
+        font-size: 1.5rem;
+    }
+    .menu-toggle:checked ~ .desktop-menu {
+        display: flex;
+    }
+
+    .menu-toggle:checked ~ .menu-icon i::before {
+        content: "\f00d"; 
+    }
 }
