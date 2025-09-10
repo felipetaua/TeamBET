@@ -9,6 +9,10 @@
     color: var(--white);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .btn {
     cursor: pointer;
     text-decoration: none;
@@ -160,6 +164,20 @@ body {
     text-align: center;
     max-width: 600px;
 }
+.empresas-text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.empresas-text h2 span {
+    color: var(--red);
+}
+
+.empresas-text p {
+    font-size: 18px;
+    color: var(--white-70);
+    margin-bottom: 40px;
+}
 
 .empresas div {
     width: 100%;
@@ -194,7 +212,7 @@ body {
 
 .empresas-text i {
     font-size: 40px;
-    color: #ff3842;
+    color: var(--red);
 }
 
 .empresa-name {
@@ -278,5 +296,12 @@ body {
 
     .hero-content {
         width: 90%;
+    }
+}
+
+@media (max-width: 475px) {
+    .empresas {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }
