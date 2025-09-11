@@ -296,7 +296,9 @@ body {
     .menu-icon {
         display: block;
         cursor: pointer;
-        position: relative;
+        position: fixed;
+        top: 28px;
+        right: 2%;
         z-index: 1001; 
     }
 
@@ -327,13 +329,13 @@ body {
     .desktop-menu .nav-item {
         font-size: 1.5rem;
     }
-    .menu-toggle:checked ~ .desktop-menu {
+    .menu-toggle:checked ~ .header .desktop-menu {
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
     }
 
-    .menu-toggle:checked ~ .menu-icon i::before {
+    .menu-toggle:checked ~ .header .menu-icon i::before {
         content: "\f00d"; 
 
     }
