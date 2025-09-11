@@ -246,6 +246,51 @@ body {
     filter: brightness(0.6);
 }
 
+/* sessão vip */
+
+.vip-section {
+    width: 100%;
+    height: 700px;
+    padding: 80px 6%;
+    background-image: url('/assets/images/bg-vip.png');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vip-descricao {
+    width: 40%;
+}
+
+.vip-descricao h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.vip-descricao h3 span {
+    color: var(--red);
+}
+
+.vip-descricao p {
+    font-size: 18px;
+    color: var(--white-70);
+    margin-bottom: 40px;
+}
+
+.vip-content {
+    width: 60%;
+}
+
+.vip-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /*  Responsividade */
 @media (max-width: 768px) {
     .menu-icon {
@@ -305,6 +350,19 @@ body {
     .hero-content {
         width: 90%;
         margin: 120px 5% 0 5%;       
+    }
+
+    .vip-section {
+        flex-direction: column-reverse;
+    }
+
+    .vip-descricao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .vip-content {
+        width: 100%;
     }
 }
 
