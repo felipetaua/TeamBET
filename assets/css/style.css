@@ -29,6 +29,7 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg);
+    overflow-x: hidden;
 }
 
 .header {
@@ -104,6 +105,7 @@ body {
 .hero-content h1 {
     font-family: 'Monoton', cursive;
     font-size: 40px;
+    letter-spacing: 5px;
     margin-bottom: 20px;
 }
 
@@ -249,6 +251,7 @@ body {
     .menu-icon {
         display: block;
         cursor: pointer;
+        position: relative;
         z-index: 1001; 
     }
 
@@ -257,7 +260,7 @@ body {
     }
 
     .desktop-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         display: flex; 
@@ -290,12 +293,18 @@ body {
 
     }
 
+    .menu-toggle:checked ~ main {
+        overflow: hidden;
+        height: 100vh;
+    }
+
     .hero-section {
         background-position: left center;
     }
 
     .hero-content {
         width: 90%;
+        margin: 120px 5% 0 5%;       
     }
 }
 
