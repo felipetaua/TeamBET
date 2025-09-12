@@ -349,6 +349,10 @@ body {
     color: var(--white-70);
 
 }
+
+.vantagens-images {
+    width: 10%;
+}
 /*  Responsividade */
 @media (max-width: 768px) {
     .menu-icon {
