@@ -291,6 +291,64 @@ body {
     object-fit: contain;
 }
 
+/* sessão de parcerias */
+
+.parcerias-section {
+    width: 100%;
+    height: 500px;
+    padding: 80px 6%;
+    /* display: flex; */
+}
+
+.parcerias-descricao {
+    width: 50%;
+}
+
+.parcerias-content {
+    width: 50%;
+}
+
+.parcerias-section h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.parcerias-section h3 span {
+    color: var(--red);
+}
+
+.parcerias-section p {
+    font-size: 18px;
+    color: var(--white-70);
+    margin-bottom: 40px;
+}
+
+.wrapper-parcerias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.parcerias-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12px;
+
+}
+
+.list-parcerias {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    font-size: 20px;
+    color: var(--white-70);
+
+}
 /*  Responsividade */
 @media (max-width: 768px) {
     .menu-icon {
