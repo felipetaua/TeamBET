@@ -295,9 +295,12 @@ body {
 
 .parcerias-section {
     width: 100%;
-    height: 500px;
+    height: auto;
     padding: 80px 6%;
-    /* display: flex; */
+    background-image: url('/assets/images/bg-parcerias.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .parcerias-descricao {
@@ -346,13 +349,26 @@ body {
     gap: 20px;
 
     font-size: 20px;
-    color: var(--white-70);
+    color: var(--white);
+}
+
+.list-parcerias li {
+    color: var(--white-80);
+}
+
+.list-parcerias {
+    padding: 20px 40px;
+}
+
+.list-parcerias b {
+    color:var(--white-90);
 
 }
 
 .vantagens-images {
-    width: 10%;
+    width: 5vw;
 }
+
 /*  Responsividade */
 @media (max-width: 768px) {
     .menu-icon {
@@ -427,6 +443,27 @@ body {
 
     .vip-content {
         width: 100%;
+    }
+    
+    .wrapper-parcerias {
+        flex-direction: column-reverse;
+    }
+
+    .parcerias-section {
+        padding-top: 120px;
+        height: 100%;
+    }
+
+    .parcerias-descricao {
+        width: 100%;
+    }
+
+    .parcerias-content {
+        width: 100%;
+    }
+
+    .vantagens-images {
+        width: 10vw;
     }
 }
 
