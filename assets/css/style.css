@@ -569,7 +569,7 @@ body {
     margin-top: 2rem;
 }
 .footer-5-column p {
-    color: #777777;
+    color: var(--white-70);
 }
 .footer-5-column .footer-container {
     max-width: 1320px;
@@ -690,9 +690,10 @@ body {
 }
 .footer-5-column .footer-navbar .footer-navbar-col h5 {
     margin-bottom: 1.5rem;
-    color: #000;
+    color: var(--white);
     overflow-wrap: break-word;
     padding: 0 0.5rem 0 0;
+    font-size: 1.1rem;
 }
 .footer-5-column .footer-navbar .footer-navbar-col ul {
     padding: 0 0.5rem 0 0;
@@ -704,19 +705,25 @@ body {
 .footer-5-column .footer-navbar .footer-navbar-col ul li:not(:last-child) {
     margin-bottom: 1rem;
 }
+.footer-5-column .footer-container .footer-navbar-container .footer-company-details .footer-icons ul li a:hover {
+    color: var(--red);
+}
+.footer-5-column .footer-container .footer-navbar-container .footer-company-details .footer-icons ul li a svg {
+    fill: currentColor;
+}
 .footer-5-column .footer-navbar .footer-navbar-col ul li a {
     font-size: 16px;
     text-decoration: none;
-    color: #777777;
+    color: var(--white-70);
     overflow-wrap: break-word;
 }
 .footer-5-column .footer-navbar .footer-navbar-col ul li a:hover {
-    color: #000;
+    color: var(--red-80);
 }
 
 .footer-5-column .footer-copyright {
     padding: 2rem 0;
-    border-top: 1px solid rgb(219, 215, 215);
+    border-top: 1px solid var(--white-20);
 }
 .footer-5-column .footer-copyright p {
     font-size: 14px;
