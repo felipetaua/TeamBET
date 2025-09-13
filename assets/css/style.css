@@ -265,7 +265,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #09090cf1 60%,  #09090c91 90%, transparent);
+    background: linear-gradient(to bottom, #09090cf1 60%,  #09090cbb 100% );
     z-index: 1;
 }
 
@@ -355,7 +355,7 @@ body {
 /* Seção Awesome */
 .awesome {
     padding: 80px 6%;
-    background-color: var(--red-50);
+    background-image: linear-gradient(rgba(9, 9, 12, 0.774), rgba(9, 9, 12, 0.753)), url('/assets/images/patern.jpg'); 
 }
 
 .awesome-wrapper {
