@@ -246,6 +246,77 @@ body {
     filter: brightness(0.6);
 }
 
+
+/* sessão games */
+
+.games {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.games h2 {
+    font-size: 2.5rem;
+}
+
+.no-events {
+    color: #888;
+    font-style: italic;
+}
+
+/* about */
+.about, .awesome {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.awesome {
+    background-color: #000;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text, .awesome-text {
+    padding-right: 20px;
+}
+
+.awesome .awesome-text {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+/* sessão dining */
+
+.dining {
+    padding-top: 80px;
+    background-color: var(--primary-color);
+}
+
+.dining .container {
+    padding-bottom: 40px;
+}
+
+.dining h2 {
+    font-size: 2.5rem;
+}
+
+.dining-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.dining-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* sessão vip */
 
 .vip-section {
