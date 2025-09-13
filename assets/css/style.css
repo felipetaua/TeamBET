@@ -404,6 +404,43 @@ body {
     color: var(--white-70);
 }
 
+.contato-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 45px 75px;
+    border-radius: 12px;
+    background-color: var(--white-10);
+}
+
+.contato img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-atendente {
+    height: 200px;
+    width: 200x;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: var(--white-10);
+}
+
+.contato-info P {
+    font-size: 18px;
+    color: var(--white);
+}
+
 .contato-content i {
     font-size: 40px;
     color: var(--red);
@@ -413,6 +450,7 @@ body {
 .formas-pagamento img {
     width: 80px;
 }
+
 
 /*  Responsividade */
 @media (max-width: 768px) {
