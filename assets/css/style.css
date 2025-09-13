@@ -562,8 +562,14 @@ body {
     border-radius: 8px;
 }
 
-/* footer */
+/* sessão contato */
 
+.formas-pagamento img {
+    width: 80px;
+}
+
+
+/* footer */
 
 .logo-footer {
     width: 200px;
