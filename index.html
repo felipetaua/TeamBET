@@ -8,6 +8,9 @@
 
     <!-- icone head -->
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+    <!-- Otimização de LCP: Preload da imagem principal com alta prioridade -->
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/hero-bg.jpg" type="image/jpeg">
     <title>Team BET - Landing Page</title>
 </head>
 <body>
@@ -36,7 +39,7 @@
 
     <main>
         <section class="hero-section">
-            opa
+            <img src="/assets/images/hero-bg.jpg" alt="Fundo de cassino com luzes vibrantes e roleta" class="hero-bg-image" fetchpriority="high" loading="eager">
             <div class="hero-content">
                 <p class="hero-category"><i class="fa-solid fa-clover"></i>cassino & esportes <i class="fa-solid fa-futbol"></i></p>
                 <h1>A MELHOR DA AMÉRICA LATINA!</h1>
