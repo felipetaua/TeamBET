@@ -564,6 +564,11 @@ body {
 
 /* footer */
 
+
+.logo-footer {
+    width: 200px;
+}
+
 .footer-5-column {
     padding-top: 3rem;
     margin-top: 2rem;
@@ -612,7 +617,6 @@ body {
     .footer-company-details
     .footer-logo
     img {
-    max-width: 100%;
     height: auto;
 }
 .footer-5-column
