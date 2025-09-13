@@ -369,6 +369,51 @@ body {
     width: 5vw;
 }
 
+/* sessão contato */
+
+.contato-section {
+    width: 100%;
+    height: auto;
+    padding: 80px 12%;
+    background-image: url('/assets/images/bg-contato.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.contato-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.contato-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.contato-content h3 span {
+    color: var(--red);
+}
+
+.contato-content p {
+    font-size: 20px;
+    color: var(--white-70);
+}
+
+.contato-content i {
+    font-size: 40px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.formas-pagamento img {
+    width: 80px;
+}
+
 /*  Responsividade */
 @media (max-width: 768px) {
     .menu-icon {
@@ -560,12 +605,6 @@ body {
     background-color: var(--white);
     padding: 10px;
     border-radius: 8px;
-}
-
-/* sessão contato */
-
-.formas-pagamento img {
-    width: 80px;
 }
 
 
