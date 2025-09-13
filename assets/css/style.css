@@ -447,8 +447,62 @@ body {
     margin-bottom: 20px;
 }
 
-.formas-pagamento img {
-    width: 80px;
+.form-contato {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.form-contato input {
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: var(--white-20);
+    width: 80%;
+}
+
+.form-contato button {
+    width: 20%;
+}
+
+.image-divulgacao {
+    width: 300px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.details ul {
+    display: block;
+    width: 50%;
+    list-style: none;
+    font-size: 18px;
+}
+
+.details ul li::before {
+    content: '•';
+    padding-right: 10px;
+    color: var(--red);
+}
+
+@media (max-width: 1032px) {
+    .contato-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details ul {
+        width: 70%;
+    }
+
+    .image-divulgacao {
+        width: 30%;
+    }
 }
 
 
@@ -547,6 +601,42 @@ body {
 
     .vantagens-images {
         width: 10vw;
+    }
+
+    .contato-section {
+        padding: 80px 6%;
+    }
+
+    .contato-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contato {
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+
+    .form-contato {
+        flex-direction: column;
+    }
+
+    .form-contato input, .form-contato button {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .image-divulgacao {
+        width: 100%;
+    }
+
+    .details ul {
+        font-size: 24px;
     }
 }
 
