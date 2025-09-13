@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Preconnect para acelerar a conexão com os domínios das fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400&display=swap" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'" />
     
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- icone head -->
@@ -361,35 +362,37 @@
     <!-- Otimização: Scripts adiados com 'defer' para não bloquear a renderização da página -->
     <script src="./assets/js/script.js" defer></script>
     <script src="https://unpkg.com/scrollreveal" defer></script>
-    <script defer>
-        // Animações de Scroll
-        window.sr = ScrollReveal({
-            origin: 'top',
-            distance: '50px',
-            duration: 1000,
-            reset: true
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animações de Scroll
+            window.sr = ScrollReveal({
+                origin: 'top',
+                distance: '50px',
+                duration: 1000,
+                reset: true
+            });
+
+            sr.reveal('.games-text, .awesome-text, .dining-text, .empresas-text, .vip-descricao, .contato-content', {
+                interval: 200
+            });
+
+            sr.reveal('.hero-content h1', { delay: 200, origin: 'left' });
+            sr.reveal('.hero-content p', { delay: 400, origin: 'left' });
+            sr.reveal('.hero-content .btn-primay', { delay: 600, origin: 'bottom' });
+
+            sr.reveal('.awesome-image', { delay: 300, origin: 'right' });
+            sr.reveal('.vip-content', { delay: 300, origin: 'right' });
+
+            sr.reveal('.empresas div', { interval: 150, origin: 'bottom' });
+            sr.reveal('.dining-gallery img', { interval: 100, origin: 'bottom' });
+
+            sr.reveal('.parcerias-section h3, .parcerias-section > p', { origin: 'left', interval: 150 });
+            sr.reveal('.parcerias-content', { origin: 'right', delay: 200 });
+            sr.reveal('.list-parcerias li', { origin: 'bottom', interval: 100, delay: 300 });
+
+            sr.reveal('.footer-company-details', { origin: 'left' });
+            sr.reveal('.footer-navbar-col', { origin: 'bottom', interval: 150 });
         });
-
-        sr.reveal('.games-text, .awesome-text, .dining-text, .empresas-text, .vip-descricao, .contato-content', {
-            interval: 200
-        });
-
-        sr.reveal('.hero-content h1', { delay: 200, origin: 'left' });
-        sr.reveal('.hero-content p', { delay: 400, origin: 'left' });
-        sr.reveal('.hero-content .btn-primay', { delay: 600, origin: 'bottom' });
-
-        sr.reveal('.awesome-image', { delay: 300, origin: 'right' });
-        sr.reveal('.vip-content', { delay: 300, origin: 'right' });
-
-        sr.reveal('.empresas div', { interval: 150, origin: 'bottom' });
-        sr.reveal('.dining-gallery img', { interval: 100, origin: 'bottom' });
-
-        sr.reveal('.parcerias-section h3, .parcerias-section > p', { origin: 'left', interval: 150 });
-        sr.reveal('.parcerias-content', { origin: 'right', delay: 200 });
-        sr.reveal('.list-parcerias li', { origin: 'bottom', interval: 100, delay: 300 });
-
-        sr.reveal('.footer-company-details', { origin: 'left' });
-        sr.reveal('.footer-navbar-col', { origin: 'bottom', interval: 150 });
     </script>
 </body>
 </html>
