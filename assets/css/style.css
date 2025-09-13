@@ -1,20 +1,21 @@
 @font-face {
-  font-family: 'Font Awesome 6 Free';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-regular-400.woff2") format("woff2");
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-regular-400.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Free';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-solid-900.woff2") format("woff2");
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-solid-900.woff2") format("woff2");
 }
 
 :root {
+    /* main */
     --bg: #09090c;
     --primary: #b329f2;
     --secondary: #131a2b;
@@ -31,6 +32,7 @@
     --red-100: #cc3f47ff;
     --cor:#ff9399;
     --yellow: #FFD700;
+
     /* defaults */
     --white: #FFFFFF;
     --white-10: #FFFFFF1A;

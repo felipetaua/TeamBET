@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Otimização de CSS: Carregamento assíncrono para não bloquear a renderização -->
     <!-- Preconnect para acelerar a conexão com os domínios das fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
 
     <!-- Carrega as fontes e ícones de forma não-bloqueante -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400&display=swap" media="print" onload="this.media='all'">
@@ -358,10 +358,10 @@
         </div>
     </div>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script>
+    <!-- Otimização: Scripts adiados com 'defer' para não bloquear a renderização da página -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script defer>
         // Animações de Scroll
         window.sr = ScrollReveal({
             origin: 'top',
