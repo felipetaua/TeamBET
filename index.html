@@ -341,5 +341,37 @@
     </div>
 
     <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        // Animações de Scroll
+        window.sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 1000,
+            reset: true
+        });
+
+        sr.reveal('.games-text, .awesome-text, .dining-text, .empresas-text, .vip-descricao, .contato-content', {
+            interval: 200
+        });
+
+        sr.reveal('.hero-content h1', { delay: 200, origin: 'left' });
+        sr.reveal('.hero-content p', { delay: 400, origin: 'left' });
+        sr.reveal('.hero-content .btn-primay', { delay: 600, origin: 'bottom' });
+
+        sr.reveal('.awesome-image', { delay: 300, origin: 'right' });
+        sr.reveal('.vip-content', { delay: 300, origin: 'right' });
+
+        sr.reveal('.empresas div', { interval: 150, origin: 'bottom' });
+        sr.reveal('.dining-gallery img', { interval: 100, origin: 'bottom' });
+
+        sr.reveal('.parcerias-section h3, .parcerias-section > p', { origin: 'left', interval: 150 });
+        sr.reveal('.parcerias-content', { origin: 'right', delay: 200 });
+        sr.reveal('.list-parcerias li', { origin: 'bottom', interval: 100, delay: 300 });
+
+        sr.reveal('.footer-company-details', { origin: 'left' });
+        sr.reveal('.footer-navbar-col', { origin: 'bottom', interval: 150 });
+    </script>
 </body>
 </html>
