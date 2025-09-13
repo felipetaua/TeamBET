@@ -274,6 +274,16 @@ body {
     margin-bottom: 20px;
 }
 
+.card-icon {
+    padding: 20px;
+    color: var(--red);
+}
+
+.club-icon {
+    color: var(--red);
+    padding-left: 20px;
+}
+
 .no-events {
     color: var(--white-50);
     font-style: italic;
@@ -283,6 +293,33 @@ body {
     font-size: 2rem;
     color: var(--red);
     margin: 20px 0;
+}
+
+.fading-line {
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, transparent, var(--red), transparent);
+}
+
+.icon-divider span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}
+
+.icon-divider span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--red);
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 /* Seção Awesome */
