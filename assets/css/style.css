@@ -63,6 +63,7 @@ body {
 .menu-icon i {
     color: var(--white);
     font-size: 28px;
+    
 }
 
 .btn-action {
@@ -561,9 +562,6 @@ body {
     width: 100%;
     height: auto;
     padding: 80px 12%;
-    background-image: url('/assets/images/bg-contato.png');
-    background-size: cover;
-    background-position: bottom;
 }
 
 .contato-content {
