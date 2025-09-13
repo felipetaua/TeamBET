@@ -13,6 +13,11 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .btn {
     cursor: pointer;
     text-decoration: none;
@@ -29,7 +34,6 @@ html {
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg);
-    overflow-x: hidden;
 }
 
 .header {
@@ -255,7 +259,7 @@ body {
 /* Seção Games */
 .games-section {
     position: relative;
-    padding: 160px 80px;
+    padding: 160px 6%;
     background-color: var(--black);
     display: flex;
     justify-content: center;
@@ -697,6 +701,12 @@ body {
 
 /*  Responsividade */
 @media (max-width: 768px) {
+    .logo {
+        width: 160px;
+        align-items: center;
+        margin-top: 10px;
+    }
+
     .menu-icon {
         display: block;
         cursor: pointer;
