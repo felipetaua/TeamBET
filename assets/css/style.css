@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
 :root {
     --bg: #09090c;
     --primary: #b329f2;
@@ -15,29 +31,14 @@
     --red-100: #cc3f47ff;
     --cor:#ff9399;
     --yellow: #FFD700;
-
     /* defaults */
     --white: #FFFFFF;
     --white-10: #FFFFFF1A;
     --white-20: #FFFFFF33;
-    --white-30: #FFFFFF4D;
     --white-40: #FFFFFF66;
     --white-50: #FFFFFF80;
-    --white-60: #FFFFFF99;
     --white-70: #FFFFFFB2;
-    --white-80: #FFFFFFCC;
     --white-90: #FFFFFFEE;
-
-    --black: #000000;
-    --black-10: #0000001A;
-    --black-20: #00000033;
-    --black-30: #0000004D;
-    --black-40: #00000066;
-    --black-50: #00000080;
-    --black-60: #00000099;
-    --black-70: #000000B2;
-    --black-80: #000000CC;
-    --black-90: #000000EE;
 }
 * {
     margin: 0;
